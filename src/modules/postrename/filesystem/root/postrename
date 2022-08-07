@@ -51,8 +51,8 @@ function cleanup {
 ### Change nginx root
 function change_www_root {
     bash -c "
-        sed -i 's|/home/pi/mainsail|/home/${DEFAULT_USER}/mainsail|g' \
-        /etc/nginx/sites-available/mainsail
+        sed -i 's|/home/pi/fluidd|/home/${DEFAULT_USER}/fluidd|g' \
+        /etc/nginx/sites-available/fluidd
     "
 }
 

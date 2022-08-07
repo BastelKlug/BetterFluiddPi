@@ -13,7 +13,7 @@
 [ -n "$CROWSNEST_CROWSNEST_REPO_SHIP" ] || CROWSNEST_CROWSNEST_REPO_SHIP=https://github.com/mainsail-crew/crowsnest.git
 [ -n "$CROWSNEST_CROWSNEST_REPO_BRANCH" ] || CROWSNEST_CROWSNEST_REPO_BRANCH=master
 [ -n "$CROWSNEST_CROWSNEST_DEPS" ] || CROWSNEST_CROWSNEST_DEPS="git crudini bsdutils findutils v4l-utils ffmpeg"
-[ -n "$CROWSNEST_DEFAULT_CONF" ] || CROWSNEST_DEFAULT_CONF="mainsail_default.conf"
+[ -n "$CROWSNEST_DEFAULT_CONF" ] || CROWSNEST_DEFAULT_CONF="fluidd_default.conf"
 [ -n "$CROWSNEST_DEFAULT_CONF_DIR" ] || CROWSNEST_DEFAULT_CONF_DIR="/home/${BASE_USER}/klipper_config"
 # Force Raspicam fix bool (1:yes / 0:no)
 [ -n "$CROWSNEST_FORCE_RASPICAMFIX" ] || CROWSNEST_FORCE_RASPICAMFIX=1

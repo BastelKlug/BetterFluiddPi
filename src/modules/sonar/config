@@ -14,7 +14,7 @@
 [ -n "$SONAR_REPO_BRANCH" ] || SONAR_REPO_BRANCH=main
 [ -n "$SONAR_DEPS" ] || SONAR_DEPS="git crudini iputils-ping"
 [ -n "$SONAR_DEFAULT_CONF_DIR" ] || SONAR_DEFAULT_CONF_DIR="/home/${BASE_USER}/klipper_config"
-[ -n "$SONAR_DEFAULT_CONF" ] || SONAR_DEFAULT_CONF="mainsail_default.conf"
+[ -n "$SONAR_DEFAULT_CONF" ] || SONAR_DEFAULT_CONF="fluidd_default.conf"
 # Add Sonar to moonraker.conf (update_manager) bool (1:yes / 0:no)
 [ -n "$SONAR_ADD_SONAR_MOONRAKER" ] || SONAR_ADD_SONAR_MOONRAKER=1
 # Path to moonraker.conf (must be set if add to update_manager)

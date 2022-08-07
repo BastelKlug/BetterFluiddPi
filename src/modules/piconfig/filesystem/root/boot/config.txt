@@ -58,7 +58,7 @@ dtparam=audio=on
 
 
 ####################################################
-####     MainsailOS specific configurations     ####
+####     FluiddPi specific configurations     ####
 ####################################################
 ####      DO NOT CHANGE SECTION BELOW !!!       ####
 ####   UNLESS YOU KNOW WHAT YOU ARE DOING !!!   ####

@@ -15,34 +15,34 @@ set -xe
 source /common.sh
 install_cleanup_trap
 
-### Install mainsail.cfg
+### Install fluidd.cfg
 unpack /filesystem/home/${BASE_USER} /home/${BASE_USER} ${BASE_USER}
 
-echo_green "Installing Mainsail Webfrontend ..."
+echo_green "Installing Fluidd ..."
 
 ### install all deps at once for time consumption reasons.
 ## APT: Update Repo Database and install Dependencies
 
-apt update && apt install ${MAINSAIL_DEPS} -y
+apt update && apt install ${FLUIDD_DEPS} -y
 
 ### Preparing nginx
 rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/mainsail /etc/nginx/sites-enabled/
+ln -s /etc/nginx/sites-available/fluidd /etc/nginx/sites-enabled/
 
 # lower nginx rotate cycle to 2 instead 14
 sudo sed -i 's/rotate 14/rotate 2/' /etc/logrotate.d/nginx
 
-### Download and Install Mainsail Web Frontend
+### Download and Install Fluidd
 pushd /home/${BASE_USER}
-sudo -u ${BASE_USER} wget -q --show-progress -O mainsail.zip "${MAINSAIL_URL}"
-sudo -u ${BASE_USER} unzip mainsail.zip -d /home/${BASE_USER}/mainsail
+sudo -u ${BASE_USER} wget -q --show-progress -O fluidd.zip "${FLUIDD_URL}"
+sudo -u ${BASE_USER} unzip fluidd.zip -d /home/${BASE_USER}/fluidd
 ## cleanup
-rm /home/${BASE_USER}/mainsail.zip
+rm /home/${BASE_USER}/fluidd.zip
 popd
 
 ### Link logfiles to klipper_logs
-ln -s /var/log/nginx/mainsail-access.log /home/${BASE_USER}/klipper_logs/
-ln -s /var/log/nginx/mainsail-error.log /home/${BASE_USER}/klipper_logs/
+ln -s /var/log/nginx/fluidd-access.log /home/${BASE_USER}/klipper_logs/
+ln -s /var/log/nginx/fluidd-error.log /home/${BASE_USER}/klipper_logs/
 
 # Unpack root at the end, so files are modified before
 unpack /filesystem/root /

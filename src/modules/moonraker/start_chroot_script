@@ -19,8 +19,8 @@ apt_update_skip
 check_install_pkgs "git virtualenv"
 
 echo_green "Installing Moonraker and enable Moonraker Service"
-# install MainsailOS premade moonraker.conf
-echo_green "Copying MainsailOS premade moonraker.conf"
+# install FluiddPi premade moonraker.conf
+echo_green "Copying FluiddPi premade moonraker.conf"
 unpack /filesystem/home/${BASE_USER} /home/${BASE_USER} ${BASE_USER}
 # clone klipper repo
 pushd /home/${BASE_USER}

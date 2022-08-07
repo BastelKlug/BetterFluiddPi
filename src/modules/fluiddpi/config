@@ -1,0 +1,4 @@
+#!/bin/bash
+# shellcheck disable=all
+
+[ -n "$FLUIDDPI_DEPS" ] || FLUIDDPI_DEPS="python3-serial"

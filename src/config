@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Shebang for better detection of file type
 
-export DIST_NAME=MainsailOS
+export DIST_NAME=BetterFluiddPi
 export DIST_VERSION=0.7.0
 export BASE_IMAGE_ENLARGEROOT=2500
-export MODULES="base,pkgupgrade,mainsailos(network,piconfig,klipper,is_req_preinstall,moonraker,timelapse,mainsail,crowsnest,sonar,password-for-sudo),postrename"
+export MODULES="base,pkgupgrade,fluiddpi(network,piconfig,klipper,is_req_preinstall,moonraker,timelapse,fluidd,crowsnest,sonar,password-for-sudo),postrename"
 export BASE_RELEASE_COMPRESS=yes
 export BASE_IMAGE_RESIZEROOT=600

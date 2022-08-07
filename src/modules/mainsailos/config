@@ -1,4 +1,0 @@
-#!/bin/bash
-# shellcheck disable=all
-
-[ -n "$MAINSAILOS_DEPS" ] || MAINSAILOS_DEPS="python3-serial"
