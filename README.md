@@ -1,3 +1,3 @@
 MainsailOS with Fluidd instead of Mainsail.
 
-Thanks for the mainsail-crew team for their great work!
+Thanks to the mainsail-crew for their great work!
